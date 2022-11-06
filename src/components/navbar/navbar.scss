@@ -1,0 +1,43 @@
+.mainNav{
+    height: 10vh;
+    background-color: #0e1111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 25px;
+    padding-left: 50px;
+    position: sticky;
+    top: 0;
+}
+
+
+.links{
+    a{
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+        padding: 10px 15px;
+        transition: all 0.7s;
+        border: 2px solid transparent;
+        letter-spacing: 0.2rem;
+    }
+    a:hover{
+        background-color: black;
+        font-size: 21px;
+        border: 2px solid white;
+    }
+}
+
+
+
+
+#links{
+    display: none;
+}
+
+@media(min-width:600px){
+    #links{
+        display: block;
+    } 
+}

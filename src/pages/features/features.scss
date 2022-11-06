@@ -1,0 +1,89 @@
+.features{
+    background-color: red;
+    min-height: 90vh
+    
+}
+    .lang-feed{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px;
+    
+        .container{
+            background-color: red;
+            display: grid;
+            width: 70%;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    
+        .langbox{
+            background-color: purple;
+            height: 200px;
+            margin: 30px;
+        }
+    }
+    
+    
+    .room-feed{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px;
+    
+        .container{
+            background-color: blue;
+            display: grid;
+            width: 70%;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    
+        .roombox{
+            background-color: purple;
+            height: 200px;
+            margin: 30px;
+        }
+    }
+    
+    .quiz-feed{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px;
+    
+        .container{
+            background-color: blue;
+            display: grid;
+            width: 70%;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    
+        .quizbox{
+            background-color: purple;
+            height: 200px;
+            margin: 30px;
+        }
+    }
+    
+    .polls-feed{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin: 50px;
+    
+        .container{
+            background-color: blue;
+            display: grid;
+            width: 70%;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    
+        .pollsbox{
+            background-color: purple;
+            height: 200px;
+            margin: 30px;
+        }
+    }

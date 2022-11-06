@@ -1,0 +1,48 @@
+.home{
+    color: white;
+    display: grid;
+}
+
+.banner{
+    padding: 50px;
+    background-color: #0e1111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+    .box{
+        padding: 10px 20px;
+        border: 2px solid white;
+        margin: 12px;
+    }
+}
+
+
+.about{
+    background-color: black;
+    padding:80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.1rem;
+    font-size: 24px;
+    text-align: center;
+}
+
+.services-info{
+    background-color: #0c0c0c;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    ul{
+        list-style: none;
+    }
+}
+
+

@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import Home from './pages/home/Home.js'
+import MainLayout from './layouts/main/MainLayout'
+import UserLayout from './layouts/user/UserLayout'
+import User from './pages/user/User.js'
+import Features from './pages/features/Features.js'
+import FeaturesLayout from './layouts/features/FeaturesLayout.js'
+import Communities from './pages/communities/Communties.js'
+import Community from './pages/community/Community.js'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<MainLayout/>}>
+          <Route index element={<Home/>}></Route>
+        </Route>
+        <Route path='/user/dashboard/' element={<UserLayout/>}>
+          <Route index element={<User/>}></Route>
+        </Route>
+        <Route path='/features/' element={<FeaturesLayout/>}>
+          <Route index element={<Features/>}></Route>
+          <Route path='communities' element={<Communities/>}></Route>
+          <Route path='communities/:name' element={<Community/>}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
